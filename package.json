@@ -1,6 +1,6 @@
 {
   "name": "@fengcch/n8n-nodes-302ai-chat",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "n8n community node for 302.ai AI service integration",
   "keywords": [
     "n8n-community-node-package",
@@ -10,17 +10,17 @@
     "llm"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/reloadggg/n8n-node",
+  "homepage": "https://github.com/reloadggg/n8n-nodes-302ai-chat",
   "author": {
     "name": "302.AI",
     "url": "https://302.ai"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/reloadggg/n8n-node.git"
+    "url": "git+https://github.com/reloadggg/n8n-nodes-302ai-chat.git"
   },
   "bugs": {
-    "url": "https://github.com/reloadggg/n8n-node/issues"
+    "url": "https://github.com/reloadggg/n8n-nodes-302ai-chat/issues"
   },
   "engines": {
     "node": ">=20.15"
