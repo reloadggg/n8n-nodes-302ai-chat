@@ -1,6 +1,6 @@
 {
   "name": "@fengcch/n8n-nodes-302ai-chat",
-  "version": "1.1.9",
+  "version": "1.1.8",
   "description": "n8n community node for 302.ai AI service integration",
   "keywords": [
     "n8n-community-node-package",
@@ -27,8 +27,7 @@
   },
   "main": "dist/index.js",
   "scripts": {
-    "build": "npx rimraf dist && tsc && gulp build:icons && gulp create:index && npm run clean:dist",
-    "clean:dist": "cd dist && rm -f package.json tsconfig.tsbuildinfo && find . -name '*.js.map' -delete",
+    "build": "npx rimraf dist && tsc && gulp build:icons && gulp create:index",
     "dev": "tsc --watch",
     "format": "prettier nodes credentials --write",
     "lint": "eslint nodes credentials package.json",
@@ -36,9 +35,7 @@
     "prepublishOnly": "npm run build && npm run lint -c .eslintrc.prepublish.js nodes credentials package.json"
   },
   "files": [
-    "dist",
-    "README.md",
-    "LICENSE.md"
+    "dist"
   ],
   "n8n": {
     "n8nNodesApiVersion": 1,

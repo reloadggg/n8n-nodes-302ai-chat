@@ -24,15 +24,11 @@ function copyIcons() {
 }
 
 function createIndex(done) {
-	const indexContent = `// Export nodes
-module.exports = {
-	nodes: [
-		require('./nodes/ThreeZeroTwoAI/ThreeZeroTwoAi.node.js')
-	],
-	credentials: [
-		require('./credentials/ThreeZeroTwoAIApi.credentials.js')
-	]
-};`;
+	const indexContent = `"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ThreeZeroTwoAI = void 0;
+const ThreeZeroTwoAi_node_1 = require("./nodes/ThreeZeroTwoAI/ThreeZeroTwoAi.node");
+exports.ThreeZeroTwoAI = ThreeZeroTwoAi_node_1.ThreeZeroTwoAI;`;
 	
 	fs.writeFileSync(path.resolve('dist', 'index.js'), indexContent);
 	done();
