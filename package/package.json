@@ -27,7 +27,7 @@
   },
   "main": "dist/index.js",
   "scripts": {
-    "build": "npx rimraf dist && tsc && gulp build:icons && gulp create:index",
+    "build": "npx rimraf dist && tsc && gulp build:icons",
     "dev": "tsc --watch",
     "format": "prettier nodes credentials --write",
     "lint": "eslint nodes credentials package.json",
