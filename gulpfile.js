@@ -14,7 +14,13 @@ function copyIcons() {
 	const credSource = path.resolve('credentials', '**', '*.{png,svg}');
 	const credDestination = path.resolve('dist', 'credentials');
 
-	return src(credSource).pipe(dest(credDestination));
+	src(credSource).pipe(dest(credDestination));
+
+	// Copy icons from icons directory
+	const iconSource = path.resolve('icons', '*.{png,svg}');
+	const iconDestination = path.resolve('dist', 'icons');
+
+	return src(iconSource).pipe(dest(iconDestination));
 }
 
 function createIndex(done) {

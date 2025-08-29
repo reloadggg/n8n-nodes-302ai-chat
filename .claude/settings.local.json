@@ -7,7 +7,11 @@
       "Bash(git push:*)",
       "Bash(npm publish:*)",
       "Bash(tar:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(npm version:*)",
+      "Bash(npm pack:*)",
+      "Read(D:\\/**)",
+      "Bash(node:*)"
     ],
     "deny": [],
     "ask": []
