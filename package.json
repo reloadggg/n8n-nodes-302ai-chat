@@ -1,0 +1,53 @@
+{
+  "name": "@302ai/n8n-nodes-302ai-chat",
+  "version": "0.0.2",
+  "description": "n8n community node for 302.ai AI service integration",
+  "keywords": [
+    "n8n-community-node-package",
+    "302ai",
+    "ai",
+    "chat",
+    "llm"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/302ai/n8n-nodes-302ai-chat",
+  "author": {
+    "name": "302.AI",
+    "url": "https://302.ai"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/302ai/n8n-nodes-302ai-chat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/302ai/n8n-nodes-302ai-chat/issues"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "echo 'Build completed - using pre-built distribution files'",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "nodes": [
+      "dist/nodes/ThreeZeroTwoAI/ThreeZeroTwoAI.node.js"
+    ],
+    "credentials": [
+      "dist/credentials/ThreeZeroTwoAIApi.credentials.js"
+    ]
+  },
+  "peerDependencies": {
+    "n8n-workflow": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
