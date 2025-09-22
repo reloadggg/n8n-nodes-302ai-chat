@@ -1,6 +1,6 @@
-# @302ai/n8n-nodes-302ai-chat
+# @fengcch/n8n-nodes-302ai-chat
 
-[![NPM Version](https://img.shields.io/npm/v/@302ai/n8n-nodes-302ai-chat?style=flat-square)](https://www.npmjs.com/package/@302ai/n8n-nodes-302ai-chat)
+[![NPM Version](https://img.shields.io/npm/v/@fengcch/n8n-nodes-302ai-chat?style=flat-square)](https://www.npmjs.com/package/@fengcch/n8n-nodes-302ai-chat)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![N8N Compatibility](https://img.shields.io/badge/N8N-v1.x-blueviolet?style=flat-square)](https://n8n.io)
 
@@ -13,7 +13,7 @@ You need to have a valid API key from [302.AI](https://302.ai/) to use this node
 ## Installation
 
 1.  Go to **Settings > Community Nodes** in your n8n instance.
-2.  Select **Install** and enter `@302ai/n8n-nodes-302ai-chat` in the search box.
+2.  Select **Install** and enter `@fengcch/n8n-nodes-302ai-chat` in the search box.
 3.  Click **Install** to add the node to your n8n instance.
 
 ## Configuration
@@ -59,7 +59,7 @@ You need to have a valid API key from [302.AI](https://302.ai/) to use this node
 ### Multimodal Example (Text + Image)
 ```json
 {
-  "model": "gpt-4-vision-preview",
+  "model": "gpt-5",
   "message": "What do you see in this image?",
   "imageUrl": "https://example.com/image.jpg",
   "temperature": 0.5
