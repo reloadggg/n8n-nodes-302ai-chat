@@ -56,6 +56,12 @@ You need to have a valid API key from [302.AI](https://302.ai/) to use this node
 }
 ```
 
+### Pseudo-stream Mode
+
+- Enable the **Pseudo-stream Mode** toggle (below Image URL) when the target model only supports streaming responses, for example Qwen3.
+- The node consumes the full stream and still returns a single JSON result so you can read the reply from `json.response`.
+- If the service emits `reasoning_content`, it is exposed as `json.reasoning` for easier debugging.
+
 ### Multimodal Example (Text + Image)
 ```json
 {
