@@ -1,6 +1,6 @@
 {
   "name": "@fengcch/n8n-nodes-302ai-chat",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "n8n community node for interacting with the 302.ai chat completion API",
   "keywords": [
     "n8n-community-node-package",
@@ -65,4 +65,3 @@
     "access": "public"
   }
 }
-
